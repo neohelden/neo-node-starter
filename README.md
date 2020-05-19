@@ -1,6 +1,6 @@
-# Project Title(Sentinelnames have to be in lowercase!)
+# Project Title (Sentinel names have to be in lowercase!)
 
-One Paragraph of project description goes here
+> One Paragraph of project description goes here
 
 ## Usage
 
@@ -55,7 +55,7 @@ You need to provide 2 different endpoints for the Sentinel Administration inside
    To make the documentation accessable from the portal you need to provide following endpoint: `${pkg.name}.documentation`. This endpoint has to return Markdown-data which will be rendered in the sentinel administration.
 
    Example, to provide the `README.md` as documentation:
-   ```
+   ```js
    const fs = require('fs')
    neo.task.process(`${pkg.name}.documentation`, async () => {
      return { response: { data: fs.readFileSync('README.md', 'utf8') } }
@@ -66,7 +66,7 @@ You need to provide 2 different endpoints for the Sentinel Administration inside
     You can also provide a Flow Example Payload, which can be copied from users. Simply build your example in the Neo Flow Engine and export it. Then write following endpoint `${pkg.name}.example`. 
 
     Example (Replace the return value with your exported JSON from the NFE):
-    ```
+    ```js
     neo.task.process(`${pkg.name}.example`, async () => {
       return [
         {

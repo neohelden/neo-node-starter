@@ -1,0 +1,16 @@
+{
+  "name": "nsx.category.name",
+  "version": "0.1.0",
+  "description": "Sample description",
+  "main": "nsx.js",
+  "scripts": {
+    "start": "node nsx.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Doe <john@doe.com> (https://john-doe.com)",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@neohelden/node": "^0.7.1"
+  }
+}
